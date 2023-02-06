@@ -4,10 +4,11 @@
 
 - Document the development process and explain the decisions made.
 
-
 - Student creates a project board and utilizes board for communication with mentor
- by keeping it up-to-date throughout project. Student plans for MVP using user
- flow charts, wireframes, and/or schema designs.
+
+ keeps it up-to-date throughout project. 
+ 
+ Student plans for MVP using user flow charts, wireframes, and/or schema designs.
 
 - Code is documented/commented and follows coding standards.
 
