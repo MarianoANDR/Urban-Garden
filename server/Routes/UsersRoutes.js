@@ -1,9 +1,15 @@
 import express from "express";
-import { getUsers, createUsers, getUser, modifyUser, deleteUser } from "../Controllers.js/UsersControllers.js";
+import {
+  registerUser,
+  loginUser,
+  getMe,
+} from "../Controllers.js/UsersControllers.js";
+import protect from "../Middeware/AuthMiddleware.js";
 
 const router = express.Router();
 
-router.route('/').get(getUsers).post(createUsers);
-router.route('/:id').get(getUser).put(modifyUser).delete(deleteUser);
+router.post("/register", registerUser);
+router.post("/login", loginUser);
+router.get("/me", protect, getMe);
 
-export {router as usersRouter};
+export { router as usersRouter };
