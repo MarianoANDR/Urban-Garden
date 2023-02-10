@@ -3,3 +3,16 @@
     margin: auto;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.urbanTitle {
+    padding-bottom: 4vw;
+}
+
+.urbanSubtitle {
+    padding-bottom: 2vw;
+}
+
