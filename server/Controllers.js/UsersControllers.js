@@ -4,7 +4,7 @@ import bcrypt from "bcryptjs";
 import asyncHandler from "express-async-handler";
 
 //  Register new user /users/register **
-export const registerUser = async (req, res) => {
+export const registerUser = asyncHandler(async (req, res) => {
   const { username, email, password } = req.body;
 
   //Check if all fields are filled
@@ -37,13 +37,12 @@ export const registerUser = async (req, res) => {
       _id: user.id,
       username: user.username,
       email: user.email,
-      token: generateToken(user._id),
     });
   } else {
     res.status(400);
     throw new Error("Invalid user data");
   }
-};
+});
 
 //  Authenticate user /users/login **
 export const loginUser = async (req, res) => {
@@ -73,7 +72,7 @@ export const getMe = asyncHandler(async (req, res) => {
     username,
     email,
   });
-});   
+});
 
 //  Generate JWT
 const generateToken = (id) => {
