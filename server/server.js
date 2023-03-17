@@ -6,7 +6,7 @@ import { locationRouter } from "./Routes/LocationRoutes.js";
 import { errorHandle } from "./Middeware/ErrorMiddleware.js";
 import { connectDB } from "./config/db.js";
 import requestIp from "request-ip";
-//This is a test commentary **
+
 const app = express();
 dotenv.config();
 connectDB();
