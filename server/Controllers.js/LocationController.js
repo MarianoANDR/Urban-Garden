@@ -2,7 +2,8 @@ import asyncHandler from "express-async-handler";
 
 export const locateUser = asyncHandler(async (req, res) => {
   const ip = "209.142.68.29"; // req.ip
-  const geoLocationAPI = `http://api.ipapi.com/${ip}?access_key=eb1624012198b51ae91061028780e595`;
+  const accessKey = "eb1624012198b51ae91061028780e595";
+  const geoLocationAPI = `http://api.ipapi.com/${ip}?access_key=${accessKey}`;
 
   const response = await fetch(geoLocationAPI);
   const location = await response.json();
