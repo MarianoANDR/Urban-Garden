@@ -1,5 +1,5 @@
 import express from "express";
-import { getVegsController } from "../Controllers.js/VegetablesController.js";
+import { getVegsController } from "../Controllers/VegetablesController.js";
 
 const router = express.Router();
 

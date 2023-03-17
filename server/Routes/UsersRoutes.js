@@ -3,7 +3,7 @@ import {
   registerUser,
   loginUser,
   getMe,
-} from "../Controllers.js/UsersControllers.js";
+} from "../Controllers/UsersControllers.js";
 import protect from "../Middeware/AuthMiddleware.js";
 
 const router = express.Router();
