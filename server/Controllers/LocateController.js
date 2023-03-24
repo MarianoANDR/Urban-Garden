@@ -1,7 +1,7 @@
 import asyncHandler from "express-async-handler";
 //API ENDPOINTS HAVE LIMITED QUANTITY OF REQUESTS **
-export const dateLocateUser = asyncHandler(async (req, res) => {
-  const ip = req.ip; // (req.ip)
+export const locateUser = asyncHandler(async (req, res) => {
+  const ip = "131.255.7.26"; // (req.ip)
   const accessKey = process.env.ACCESS_KEY;
   const geoLocationAPI = `http://api.ipapi.com/api/${ip}?access_key=${accessKey}`;
 
