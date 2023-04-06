@@ -6,25 +6,26 @@ body {
 
 input {
     border: none;
-    border-bottom: 0.4vw solid black;
+    border-bottom: 0.3vw solid black;
     font-size: 1.5vw;
     background-color: transparent;
     display: block;
     margin-bottom: 5vw;
-  }
+}
   
 .btnRegister {
     background-color: #BBDBBE;
-    border-radius: 2vw;
-    border-width: 0.4vw;
-  }
+    border-radius: 5vw;
+    border-width: 0.3vw;
+    
+}
   
 .frontImg {
     width: 100%;
     height: auto;
     border-radius: 2vw;
     opacity: 0.9;
-  }
+}
 
 .frontImageDiv {
   position:relative;
@@ -33,7 +34,7 @@ input {
 
 .formDiv {
   position: absolute;
-  top: 30vw;
+  top: 20vw;
   left: 65vw;
 }
 
@@ -44,27 +45,12 @@ input {
 }
 
 .logo {
-  position: relative;
-  left: 2vw;
-  width: 10vw;
-  height: 10vw;
-}
-
-@media screen and (min-width: 480px) {
-  
-  .btnRegister {
-  width: 10vw;
-  margin-left: 1vw;
-}
-
-.forM {
-  padding: 7vw 0;
-}
-
-.input3 {
-  margin-left: 4vw;
-}
-
+  position: absolute;
+  z-index: 1;
+  left: 4vw;
+  top: 3vw;
+  width: 15vw;
+  height: 15vw;
 }
 
 @media screen and (min-width: 1024px) {
@@ -81,9 +67,8 @@ input {
     }
     
   .btnRegister {
-      background-color: #BBDBBE;
-      border-radius: 15px;
-    }
+    width: 10vw;
+  }
     
   .frontImg {
       width: 100%;
@@ -93,15 +78,16 @@ input {
     }
 
   .frontImageDiv {
+    position: relative;
     width: 60vw;
     margin: auto;
     margin-top: 3vw;  
-    position:relative;
+    
   }
 
   .formDiv {
     position: absolute;
-    bottom: 12vw;
+    top: 12vw;
     left: 56vw;
   }
 
