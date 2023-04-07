@@ -1,0 +1,18 @@
+{
+    "vegetables": [
+        {
+            "name":"tomato",
+            "season":"spring",
+            "preparation": "",
+            "care":"",
+            "harvest":""
+        },
+        {
+            "name":"lettuce",
+            "season":"autumn",
+            "preparation": "",
+            "care":"",
+            "harvest":""
+        }
+    ]
+}
