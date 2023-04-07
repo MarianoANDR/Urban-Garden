@@ -7,17 +7,16 @@ body {
 input {
     border: none;
     border-bottom: 0.3vw solid black;
-    font-size: 1.5vw;
     background-color: transparent;
     display: block;
     margin-bottom: 5vw;
+    font-size: 2.5vw;
 }
   
 .btnRegister {
     background-color: #BBDBBE;
     border-radius: 5vw;
     border-width: 0.3vw;
-    
 }
   
 .frontImg {
@@ -35,13 +34,14 @@ input {
 .formDiv {
   position: absolute;
   top: 20vw;
-  left: 65vw;
+  left: 60vw;
 }
 
 .forM, .btnRegister, input::placeholder {
   font-family: "Reem Kufi", sans-serif;
   color: black;
-  font-size: 1.7vw;
+  font-size: 2.5vw;
+  font-weight: 700;
 }
 
 .logo {
