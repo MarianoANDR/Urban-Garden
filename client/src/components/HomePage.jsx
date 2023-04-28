@@ -11,6 +11,7 @@ export const HomePage = () => {
       </div>
       <div className="formDiv">
         <ForM />
+        <p className="parag">or<span className="paragSpan"> Sign In </span></p>
       </div>
     </div>
   );
